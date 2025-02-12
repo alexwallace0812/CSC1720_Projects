@@ -1,0 +1,1 @@
+Please input an integer: Input one more integer: The sum of the numbers is 12

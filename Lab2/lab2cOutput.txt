@@ -1,0 +1,10 @@
+Last        First       Old Pay       New Pay       
+________    ________    __________    __________    
+Shatner,    William      120000.00     129600.00
+Nimoy,      Leonard       88000.00      95040.00
+Nichols,    Nichelle      60502.00      65342.16
+Stewart,    Patrick      303030.30     327272.72
+Burton,     LeVar        200000.10     216000.11
+Sirtis,     Marina       185000.29     199800.31
+Ryan,       Jeri         505505.05     545945.45
+Kazooie,    Banjo         69420.69      74974.35

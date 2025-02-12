@@ -1,0 +1,53 @@
+// File Name: Lab1c.cpp
+// Programmer: Alex Wallace
+// Course: CSC1720
+// Date Submitted: January 16, 2024
+// Location: /home/students/sstanley/csc1720/lab1/lab1c.cpp
+// Description: This program prompts the user to enter hourly pay
+// and how much they work in a week then calculates a bunch of different
+// values of the total money
+// Assistance: Mark Marksalot helped me with my opening comment
+// Compile and Execute: g++ lab1c.cpp -o lab1c.out
+// Additional files: None
+
+// Include statements
+#include <iostream>
+#include <iomanip>
+using namespace std;
+// Main functions
+int main()
+{
+    // setting up variables
+    double pay = 0;
+    double hours = 0;
+    double weeks = 10;
+    double tax = .18;
+    double food = .2;
+// Input
+    cout << "How much money do you get per hour? ";
+    cin >> pay;
+    cout << "How many hours do you work per week? ";
+    cin >> hours;
+    
+// Setting up calculation variables
+    double tot = 0;
+    double taxmoney = 0;
+    double foodMoney = 0;
+    double spendingMoney = 0;
+    double taxAmt = 0;
+    double afterTax = 0;
+// Calculations
+    tot = weeks * hours * pay;
+    taxAmt = tot * tax;
+    afterTax = tot - taxAmt;
+    foodMoney = afterTax * food;
+    spendingMoney = afterTax - foodMoney;
+// Output to the terminal
+    cout << setprecision(2) << fixed << showpoint;
+    cout << "You will make " << tot << " dollars over the 10 weeks of summer" << "\n";
+    cout << "After taxes, you will be left with " << afterTax << " dollars." << "\n";
+    cout << "You decide to set aside " << foodMoney << " dollars for food this month." << "\n";
+    cout << "You will have " << spendingMoney << " dollars left for spending." << "\n";
+    
+    return 0;
+}
